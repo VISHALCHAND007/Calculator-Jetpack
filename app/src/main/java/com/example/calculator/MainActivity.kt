@@ -28,3 +28,8 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+@Composable
+fun Testing() {
+    
+}
