@@ -33,11 +33,14 @@ class MainActivity : ComponentActivity() {
                 Calculator(
                     state = state,
                     modifier = Modifier
+                        .fillMaxSize()
                         .background(MediumGray)
                         .padding(16.dp),
                     spacing = buttonSpacing,
-                    onAction = { }
-                    )
+                    onAction = {
+                        viewModel.onAction(it)
+                    }
+                )
             }
         }
     }

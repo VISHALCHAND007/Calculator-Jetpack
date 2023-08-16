@@ -45,14 +45,14 @@ fun Calculator(
             verticalArrangement = Arrangement.spacedBy(spacing)
         ) {
             Text(
-                text = state.number1 + (state.operator ?: "") + state.number2,
-                fontSize = 84.sp,
+                text = state.number1 + (state.operator?.operator ?: "") + state.number2,
+                fontSize = 50.sp,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(32.dp),
+                    .align(Alignment.End),
                 fontWeight = FontWeight.Light,
                 color = Color.White,
-                maxLines = 2
+                maxLines = 2,
             )
             Row(
                 modifier = Modifier
